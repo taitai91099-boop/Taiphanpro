@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaiPhan - Bảng Điều Khiển</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <h1>TaiPhan</h1>
+        <p>Hệ thống Hỗ trợ Tương tác - Bạn còn <span id="cooldown-timer">Đang tải...</span> để gửi yêu cầu tiếp theo</p>
+    </header>
+
+    <main class="dashboard">
+        <h2>🛠️ Chọn Công Cụ</h2>
+
+        <div class="tool-list">
+            <div class="tool-card views-tool">
+                <h3>Tăng Lượt Xem (Views)</h3>
+                <p>Tăng số lượt xem cho video của bạn.</p>
+                <form class="tool-form" data-tool="views">
+                    <input type="text" placeholder="Nhập ID hoặc URL Video" required>
+                    <button type="submit">Sử Dụng</button>
+                </form>
+            </div>
+
+            <div class="tool-card likes-tool">
+                <h3>Tăng Lượt Thích (Likes)</h3>
+                <p>Tăng số lượng tim cho bài đăng/video của bạn.</p>
+                <form class="tool-form" data-tool="likes">
+                    <input type="text" placeholder="Nhập ID hoặc URL Bài Đăng" required>
+                    <button type="submit">Sử Dụng</button>
+                </form>
+            </div>
+            
+            <div class="tool-card followers-tool disabled">
+                <h3>Tăng Người Theo Dõi</h3>
+                <p>Tính năng hiện đang **TẠM NGƯNG**.</p>
+                <button disabled>Đã Tắt</button>
+            </div>
+        </div>
+
+        <div id="status-message" class="message success hidden"></div>
+        
+        <div class="disclaimer">
+            <p><strong>Lưu ý:</strong> Việc lạm dụng công cụ có thể dẫn đến rủi ro bị giới hạn tài khoản. Hãy sử dụng có trách nhiệm.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TaiPhan | <a href="#">Liên hệ Hỗ trợ</a></p>
+    </footer>
+    
+    <script src="script.js"></script> 
+</body>
+</html>

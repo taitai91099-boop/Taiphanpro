@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #e0f2f7; color: #333; margin: 0; padding: 0; display: flex; flex-direction: column; min-height: 100vh; line-height: 1.6;
+}
+header {
+    background: linear-gradient_deg, #4a90e2, #6a5acd_); color: white; padding: 25px 20px; text-align: center; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); margin-bottom: 30px;
+}
+header h1 {
+    margin: 0; font-size: 2.8em; letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+header p {
+    font-size: 1.1em; margin-top: 10px; opacity: 0.9;
+}
+#cooldown-timer {
+    font-weight: bold; color: #ffeb3b;
+}
+main.dashboard {
+    padding: 30px 20px; max-width: 1200px; margin: 0 auto; flex-grow: 1;
+}
+h2 {
+    text-align: center; color: #2c3e50; margin-bottom: 40px; font-size: 2.2em; position: relative;
+}
+h2::after {
+    content: ''; width: 80px; height: 4px; background-color: #4a90e2; position: absolute; left: 50%; transform: translateX(-50%); bottom: -15px; border-radius: 2px;
+}
+.tool-list {
+    display: flex; flex-wrap: wrap; gap: 25px; justify-content: center;
+}
+.tool-card {
+    background-color: white; border: none; border-radius: 15px; padding: 30px; width: 320px; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; overflow: hidden; position: relative;
+}
+.tool-card:hover {
+    transform: translateY(-8px) scale(1.02); box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+.views-tool::before { 
+    content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 10px; background: linear-gradient_to right, #1abc9c, #16a085_); border-top-left-radius: 15px; border-top-right-radius: 15px;
+}
+.likes-tool::before { 
+    content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 10px; background: linear-gradient_to right, #e74c3c, #c0392b_); border-top-left-radius: 15px; border-top-right-radius: 15px;
+}
+.tool-card h3 {
+    color: #34495e; margin-top: 15px; font-size: 1.8em; font-weight: 600;
+}
+.tool-card p {
+    color: #7f8c8d; margin-bottom: 25px; font-size: 1em;
+}
+.tool-form input[type="text"] {
+    width: calc(100% - 24px); padding: 12px; margin-bottom: 15px; border: 1px solid #dcdcdc; border-radius: 8px; font-size: 1em; box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.tool-form button {
+    background: linear-gradient_to right, #2ecc71, #27ae60_); color: white; border: none; padding: 12px 20px; border-radius: 8px; cursor: pointer; transition: background 0.3s ease, transform 0.1s; width: 100%; font-weight: bold; font-size: 1.1em;
+}
+.tool-form button:hover:not([disabled]) {
+    transform: translateY(-1px); background: linear-gradient_to right, #27ae60, #2ecc71_);
+}
+.tool-form button:disabled {
+    background: #bdc3c7; cursor: not-allowed;
+}
+.tool-card.disabled {
+    opacity: 0.5;
+}
+.tool-card.disabled button {
+    background: #95a5a6;
+}
+.message {
+    padding: 15px; border-radius: 8px; text-align: center; margin-top: 30px; font-weight: 600; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.message.success {
+    background-color: #e6ffee; color: #27ae60; border: 1px solid #2ecc71;
+}
+.message.error {
+    background-color: #ffe6e6; color: #e74c3c; border: 1px solid #c0392b;
+}
+.hidden {
+    display: none;
+}
+.disclaimer {
+    margin-top: 40px; padding: 20px; background-color: #fcf8e3; border: 1px solid #faebcc; color: #8a6d3b; border-radius: 8px; text-align: center; font-size: 0.9em;
+}
+footer {
+    background-color: #34495e; color: white; text-align: center; padding: 20px; margin-top: auto; font-size: 0.9em;
+}
+footer a {
+    color: #ecf0f1; text-decoration: none; transition: color 0.2s;
+}
+footer a:hover {
+    color: #4a90e2;
+}
